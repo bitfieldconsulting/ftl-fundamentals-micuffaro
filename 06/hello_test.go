@@ -7,8 +7,8 @@ import (
 
 func TestHello(t *testing.T) {
 	got := hello.Greeting()
-	want := "Hello Gophers!"
+	want := "Howdy, Gopherinos!"
 	if got != want {
-		t.Errorf("Got %s, wanted %s", got, want)
+		t.Errorf("FAIL: got %s, want %s", got, want)
 	}
 }
