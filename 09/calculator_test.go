@@ -44,7 +44,7 @@ func TestMultiply(t *testing.T) {
 	for _, testCase := range testCases {
 		got := calculator.Multiply(testCase.a, testCase.b)
 		if testCase.want != got {
-			t.Errorf("Add(%d, %d): want %d, got %d", testCase.a, testCase.b, testCase.want, got)
+			t.Errorf("Multiply(%d, %d): want %d, got %d", testCase.a, testCase.b, testCase.want, got)
 		}
 	}
 }
@@ -64,7 +64,7 @@ func TestDivide(t *testing.T) {
 	for _, testCase := range testCases {
 		got := calculator.Divide(testCase.a, testCase.b)
 		if testCase.want != got {
-			t.Errorf("Add(%d, %d): want %d, got %d", testCase.a, testCase.b, testCase.want, got)
+			t.Errorf("Divide(%d, %d): want %d, got %d", testCase.a, testCase.b, testCase.want, got)
 		}
 	}
 }
